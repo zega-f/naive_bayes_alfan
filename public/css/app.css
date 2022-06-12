@@ -1,0 +1,413 @@
+/*.indec-btn{
+  background-color: grey;
+  coi
+}*/
+.btn-success{
+  background-color: #28A787 !important;
+  border: 1px solid #28A787 !important;
+}
+.btn-success:hover{
+  background-color: #1A6F5A !important;
+}
+.small-pd{
+  padding: 5px !important;
+}
+.inline-block{
+  display: inline-block !important;
+}
+.no-select{
+   user-select: none;
+}
+.search-result-list{
+  padding: 10px;
+  font-size: 14px;
+  transition: 0.1s;
+}
+.search-result-list:hover{
+  background-color: #1E90FF;
+  color: white;
+  font-size: 14px;
+  transition: 0.1s;
+}
+.no-tab-ul{
+    margin-left: -40px;
+    list-style: none;
+}
+.no-tab-ul li{
+    margin-bottom: 5px;
+}
+.card{
+  border: none !important;
+}
+.grid-center{
+  display: grid !important;
+  place-items: center !important;
+}
+header{
+  font-weight: 600;
+}
+.alert{
+  font-size: 14px !important;
+}
+button{
+  border: none;
+  padding: 5px 10px;
+}
+th{
+  font-weight: 500;
+}
+.history-ul{
+  list-style: circle;
+}
+.history-ul li{
+  margin-left: -40px;
+}
+
+.p-10-20{
+  padding: 10px 20px;
+}
+.function-btn{
+  border-radius: 0 !important;
+  transition: 0.2s;
+}
+.function-btn:hover{
+  border-radius: 3px !important;
+  background-color: white !important;
+  transition: 0.2s;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+.function-btn:focus{
+  outline: none !important;
+}
+.nice-header{
+  font-weight: 600;
+}
+.close-modal{
+  color: white;
+  background-color: red;
+  width: 20px;
+  height: 20px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  transition: 0.2s;
+  font-size: 15px;
+  cursor: pointer;
+}
+.close-modal:hover{
+  color: white !important;
+  background-color: #9A0B17 !important;
+  transition: 0.1s;
+}
+.function-navbar{
+  display: block;
+}
+.function-navbar:after{
+  display: inline-block;
+  margin-right: 10px;
+}
+.fs-18{
+  font-size: 18px;
+}
+.fs-14{
+  font-size: 14px;
+}
+.fw-600{
+  font-weight: 600;
+}
+.d-grid{
+  display: grid !important;
+  place-items:center;
+}
+.back-navigation{
+  color: black;
+  margin-right: 15px;
+}
+.text-blue{
+  color: #032F58 !important;
+}
+.btn-xs{
+  font-size: 12px !important;
+  padding: 3px 10px !important;
+}
+textarea{
+  min-height: 100px !important;
+}
+.rounded-btn-sm{
+  border-radius: 10px !important;
+  padding: 3px 20px !important;
+}
+.custom-list{
+  list-style: none;
+}
+.custom-list li{
+  /*margin-left: -40px;*/
+}
+
+.informasi-option{
+  width: 20%;
+}
+
+.informasi-option i{
+  margin-left: 10px;
+}
+
+.custom-list li span{
+  font-weight: 500;
+  color: #032F58;
+}
+
+.form-control{
+  /*font-size: 14px !important;*/
+  /*padding: 20px !important;*/
+}
+.dashboard-card{
+  padding: 20px;
+  border-radius: 20px;
+}
+.dashboard-card header{
+  font-weight: 500;
+  font-size: 16px;
+}
+table{
+  font-size: 13px;
+}
+.action-bar-table{
+  font-size: 16px;  
+}
+.action-bar-table i{
+  margin-left: 5px;
+  transition: 0.2s;
+  padding: 0 5px;
+  background-color: #F8F9FA;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.action-bar-table i:hover{
+  /*margin-left: 10px;*/
+  background-color: black;
+  color: white !important;
+  transition: 0.2s;
+}
+label{
+  font-size: 13px;
+  color: #032F58;
+  font-weight: 500;
+}
+.label{
+  font-size: 13px;
+  color: #032F58;
+  font-weight: 500;
+}
+.text-darkblue{
+  color: #032F58;
+}
+small{
+    font-size: 12px !important;
+}
+.bg-white{
+  background-color: white;
+}
+.br-10{
+  border-radius: 10px !important;
+}
+
+.br-20{
+  border-radius: 20px !important;
+}
+.modal{
+  padding: 20px !important;
+}
+.modal-show{
+  display: grid;
+  place-items: center;
+}
+.modal-dark{
+  background: rgb(0,0,0,0.3);
+  backdrop-filter: blur(3px);
+}
+
+.form-controls{
+  display: block;
+  width: 100%;
+  /*font-size: 14px;*/
+  height: 40px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  border: 1px solid #343A40; 
+}
+.form-controls:focus{
+  outline: 1px solid #032F58;
+  /*background-color: grey;*/
+  transition: 0.2s;
+}
+
+.show-grid{
+  display: grid;
+  place-items: center;
+}
+
+/*SIDEBAR*/
+.sidebar{
+  position: fixed;
+  width: 280px;
+  /*background-color: #fff;*/
+  background-color: #343A40;
+  /*background-color: #495464;*/
+  /*background-color: #16C79A;*/
+  color: white;
+  height: 100vh;
+  z-index: 99;
+  overflow: auto;
+  user-select: none;
+}
+.main{
+  /*background-color: white;*/
+  float: right;
+  width: calc(100% - 280px);
+  margin-left: 280px;
+  position:relative;
+}
+.main-full{
+  width: 100%;
+  margin: 0 auto;
+  transition: 0.5s;
+}
+.main-half{
+  width: calc(100% - 280px);
+  margin-left: 280px;
+  transition: 0.5s;
+}
+.sidenav-hide{
+  margin-left: -280px;
+  transition: 0.5s;
+}
+.sidenav-show{
+  margin-left: 0;
+  transition: 0.5s;
+}
+
+.sidebar-header{
+  /*background-color: #132C33;*/
+  width: 100%;
+  padding: 20px;
+  font-size: 13px;
+}
+
+.sidebar-content{
+  padding: 10px;
+  font-size: 14px;
+}
+
+
+/* Style the sidenav links and the dropdown button */
+.sidebar a {
+  color: inherit;
+    padding: 15px 8px 15px 16px;
+    text-decoration: none;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    font-weight: 400;
+    font-size: 13px;
+}
+.sidebar hr{
+  margin: 0;
+}
+
+.sidebar .dropdown-btn{
+    padding: 15px 8px 15px 16px;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    color: inherit;
+    transition: 0.3s;
+}
+.sidebar-active{
+  color: black !important;
+  /*background-color: #F8F9FA !important;*/
+  /*background-color: #343A40 !important;*/
+  background-color: #F8F9FA !important;
+  transition: 0.3s;
+  text-decoration: none;
+  /*border-radius: 20px;*/
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  /*margin: 10px;*/
+  margin-left: 10px;
+  width: calc(100% - 10px) !important;  
+  font-weight: 600 !important;
+}
+
+.sidebar-icon{
+  margin-right: 20px;
+  margin-left: auto;
+}
+
+/* On mouse-over */
+.sidebar a:hover, .dropdown-btn:hover {
+  color: orange;
+  /*background-color: #F8F9FA;*/
+  /*background-color: #F8F9FA !important;*/
+  transition: 0.3s;
+  text-decoration: none;
+  background-color: inherit;
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: #A4A7A9;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  transition: 0.5s;
+  display: none;
+  /*background-color: white;*/
+  padding-left: 10px;
+}
+
+.dropdown-container a{
+  padding: 10px 8px 10px 16px;
+}
+
+.dropdown-item{
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1280px) {
+  .main{
+    /*width: 500px;*/
+    width: 100%;
+    margin-left: 0;
+    /*overflow: hidden;*/
+  }
+}
