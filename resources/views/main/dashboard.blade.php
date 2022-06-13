@@ -28,12 +28,12 @@
 		<small class="text-muted">Violet Cell</small>
 	</div>
 	<div class="mb-3">
-		<form action="{{url('calculate')}}" method="post">
+		<form onsubmit="doCalculate(event);" id="nb_form">
 			@csrf
 			<div class="form-group mb-3 row">
 				<div class="col-md-3">
 					<label>Provider</label>
-					<select class="form-control form-control-sm" name="provider">
+					<select class="form-control form-control-sm" name="provider" required>
 						<option value="" selected>Pilih Provider</option>
 						@foreach($provider as $prov)
 						<option value="{{$prov->provider}}">{{ucwords($prov->provider)}}</option>
@@ -42,7 +42,7 @@
 				</div>
 				<div class="col-md-3">
 					<label>Kuota</label>
-					<select class="form-control form-control-sm" name="kuota">
+					<select class="form-control form-control-sm" name="kuota" required>
 						<option value="" selected>Pilih Besar Kuota</option>
 						@foreach($kategori_kuota as $k_kuota)
 						<option value="{{$k_kuota->kuota}}">{{ucwords($k_kuota->kuota)}}</option>
@@ -51,7 +51,7 @@
 				</div>
 				<div class="col-md-3">
 					<label>Kategori Harga</label>
-					<select class="form-control form-control-sm" name="kategori_harga">
+					<select class="form-control form-control-sm" name="kategori_harga" required>
 						<option value="" selected>Pilih Kategori Harga</option>
 						@foreach($kategori_harga as $k_harga)
 						<option value="{{$k_harga->kategori_harga}}">{{ucwords($k_harga->kategori_harga)}}</option>
@@ -59,8 +59,8 @@
 					</select>
 				</div>
 				<div class="col-md-3">
-					<label>Jenis Kuota</label>
-					<select class="form-control form-control-sm" name="jenis_kuota">
+					<label>Unlimited</label>
+					<select class="form-control form-control-sm" name="jenis_kuota" required>
 						<option value="" selected>Pilih Unlimited/Tidak</option>
 						@foreach($kategori_unlimited as $k_unlimited)
 						<option value="{{$k_unlimited->unlimited}}">{{ucwords($k_unlimited->unlimited)}}</option>
@@ -71,15 +71,30 @@
 			<button class="btn btn-info btn-xs shadow-sm">Jalankan Perhitungan <i class="bi bi-hammer"></i></button>
 		</form>
 	</div>
+	<div id="result-box"></div>
 </div>
 <script type="text/javascript">
-	function doCalculate(e)
+	function doCalculate(event, input)
 	{
-		e.preventDefault();
+		event.preventDefault();
+		var data  = $('#nb_form').serialize();
 		processed();
-		setTimeout(function(){
-			finish();
-		},2000);
+		$.ajax({
+			type : 'post',
+			url  : '{{URL::to('calculate')}}',
+			data : data,
+			success:function(data)
+			{
+				setTimeout(function(){
+					finish();
+				},1000)
+				$('#result-box').html(data)
+			},
+			error:function(data)
+			{
+				error();
+			}
+		})
 	}
 </script>
 @endsection
