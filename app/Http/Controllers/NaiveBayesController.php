@@ -66,20 +66,20 @@ class NaiveBayesController extends Controller
 
             $calc_result[] = array(
                 'classname'=>$kat_minat->minat,
-                'provider'=>number_format((float)$this_provider_case/$class_count, 4, '.', ''),
+                'provider'=>number_format((float)$this_provider_case/$class_count, 5, '.', ''),
                 'provider_base'=>"$this_provider_case/$class_count",
-                'kuota'=>number_format((float)$this_kuota_case/$class_count, 4, '.', ''),
+                'kuota'=>number_format((float)$this_kuota_case/$class_count, 5, '.', ''),
                 'kuota_base'=>"$this_kuota_case/$class_count",
-                'harga'=>number_format((float)$this_kategori_harga_case/$class_count, 4, '.', ''),
+                'harga'=>number_format((float)$this_kategori_harga_case/$class_count, 5, '.', ''),
                 'harga_base'=>"$this_kategori_harga_case/$class_count",
-                'unlimited'=>number_format((float)$this_jenis_kuota_case/$class_count, 4, '.', ''),
+                'unlimited'=>number_format((float)$this_jenis_kuota_case/$class_count, 5, '.', ''),
                 'unlimited_base'=>"$this_jenis_kuota_case/$class_count",
-                'pxc'=>number_format((float)$pxc, 4, '.', ''),
-                'pc'=>number_format((float)$pc, 4, '.', ''),
-                'pcx'=>number_format((float)$pcx, 4, '.', ''),
+                'pxc'=>number_format((float)$pxc, 5, '.', ''),
+                'pc'=>number_format((float)$pc, 5, '.', ''),
+                'pcx'=>number_format((float)$pcx, 5, '.', ''),
             );
 
-            $final_result[] = number_format((float)$pcx, 4, '.', '');
+            $final_result[] = number_format((float)$pcx, 5, '.', '');
 
             // echo "<b>".$kat_minat->minat."</b><br>";
             // echo "P(Provider|C<sub>".$i."</sub>) : ".$this_provider_case.'/'.$class_count.'<br>';
